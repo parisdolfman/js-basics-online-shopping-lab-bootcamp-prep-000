@@ -68,4 +68,4 @@ function removeFromCart(item) {
    return cart;
      }
 
-   placeOrder()
+
