@@ -57,12 +57,12 @@ function removeFromCart(item) {
      return `That item is not in your cart.`
    }
 
-   function placeOrder(cardNumber) {
-     if (arguments[0] == undefined) {
-       return "Sorry, we don't have a credit card on file for you."
-     } else {
-       var sumToCharge = total()
-       setCart([])
-       return `Your total cost is $${sumToCharge}, which will be charged to the card ${cardNumber}.`
+function placeOrder(cardNumber) {
+ if (arguments[0] == undefined) {
+   return "Sorry, we don't have a credit card on file for you."
+   } else {
+   var sumToCharge = total()
+   setCart([])
+   return `Your total cost is $${sumToCharge}, which will be charged to the card ${cardNumber}.`
      }
    }
