@@ -60,8 +60,8 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   if (cardNumber) {
     for (var i = cart.length; i > 0; i--) {
-    cart.pop()
    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
+   cart.pop()
  }
  } else {
     return `Sorry, we don't have a credit card on file for you.`
